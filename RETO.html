@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Validaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+<div class="container mt-5">
+    <form>
+        <!-- Nombre -->
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+        </div>
+
+        <!-- Apellido -->
+        <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido">
+        </div>
+
+        <!-- Sí/No Selección -->
+        <div class="mb-3">
+            <label class="form-label">¿Deseas opciones extra?</label>
+            <div>
+                <input type="radio" name="opcion" id="opcionSi" value="si"> Sí
+                <input type="radio" name="opcion" id="opcionNo" value="no" class="ms-3"> No
+            </div>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="mb-3" id="checkboxes" style="display: none;">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="extra1">
+                <label class="form-check-label" for="extra1">Opción Extra 1</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="extra2">
+                <label class="form-check-label" for="extra2">Opción Extra 2</label>
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo">
+        </div>
+
+        <!-- Contraseña y Confirmación -->
+        <div class="mb-3">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+        </div>
+        <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirma tu contraseña">
+        </div>
+
+        <!-- Botón Enviar -->
+        <button type="button" id="btnEnviar" class="btn btn-primary" disabled>Enviar</button>
+    </form>
+</div>
+
+</script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</html>
