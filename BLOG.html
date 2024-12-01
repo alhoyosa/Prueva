@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Un espacio personal donde comparto mis pensamientos, experiencias y aprendizajes sobre temas que me apasionan. ¡Bienvenido a mi primer Blog! "/>
+        <title>Mi PRIMER BLOG </title>  
+        <link rel="stylesheet" href="estilosBlog.css">  
+    </head>
+    <body>
+        <header>
+            <h1>MI PRIMER BLOG</h1>
+        </header>        
+        <section>
+            <h2>BIOGRAFIA PERSONAL</h2>
+            <P>Mi nombre es <i>ALEJANDRO HOYOS ARROYAVE</i> tengo 19 años, nací en Manizales Colombia el 16 de Noviembre del 2004, vivo con mis padres
+            <i>Pedro Jose Hoyos Ramirez</i>, mi madre <i>Claudia Marcela Arroyave Lopez</i> y mi gata <u>Akira</u> en el barrio Chipre, me considero una persona responsable,
+            sociable y muy amable con los demás, soy un poco introvertido con las personas que no conozco pero en general soy muy alegre con mis amigos
+            y personas mas cercanas a mi, soy deportista, me gusta jugar y entrenar <u>Baloncesto</u>, como Hobbies me gusta jugar video juegos y jugar voleybol.<br>Crecí y me crie 
+            en una finca ubicada en San Peregrino, allí viví los primero años de mi vida los cuales fueron unos 7 u 8 años, posterior a esto nos mudamos a la ciudad al barrio chipre
+            donde actualmente sigo viviendo.</P>
+        </section>
+        <hr>
+        <section>
+            
+            <H2><strong>Akira</strong></H2>
+            <P>Akira es mi mascota tiene 3 años es una gata <dfn>siamés</dfn> raza de gato proveniente del antiguo reino de Siam, actualmente Tailandia</P>
+            <div class="imagenes">
+                <img src="C:\Users\alejo\OneDrive\Imágenes\Imagen de WhatsApp 2024-11-05 a las 11.53.37_84ecfbc0.jpg" alt="Akira" width="500" height="500" >
+            </div>
+        <hr>
+        </section>
+        <section>
+            <h2>BIOGRAFIA ACADEMICA</h2>
+            <p>Empecé mi formación académica en el jardín de CONFA, posterior a este entré en la institución <abbr title="Colegio Mayor de Nuesta Señora">COLSEÑORA</abbr> donde cursé los
+                grados de primero a quinto de primaria y sexto a once de secundaria siempre ocupando los primeros puestos en el salón,
+                me considero una persona estudiosa y dedicada a lo que me gusta, desde quinto de primaria fui parte y capitán del equipo
+                de baloncesto, es mi hobby, y en la actualidad estoy estudiando Administración de sistemas informáticos en la Universidad Nacional de Colombia sede Manizales y actualmente estoy cursando mi sexto semestre</p>
+        </section>
+        <hr>
+        <section>
+            <h2>Baloncesto</h2>
+            <P>Para mi el baloncesto es un deporte que me permite entrenar mi cuerpo y mantenerme saludable además de eso es un desestresante que me permite salir de lo monótono de la vida cotidiana </P>
+            <h3>EQUIPOS FAVORITO</h3>
+            <ul>
+                <li style="color: blueviolet;">Los Angeles Lakers</li>
+                <li style="color:  forestgreen;">Boston Celtics</li>
+                <li style="color: red;">Chicago bulls</li>
+                <li style=" color: cadetblue;">Golden state warriors</li>
+            </ul>
+            <h3>JUGADORES DE BALONCESTO FAVORITO</h3>
+                <div id="jugador1"> <li>Kobe bryant</li></div>
+                <div id="jugador2"><li>Kyrie irving</li></div>
+                <div id="jugador3"><li>Michael jordan</li></div>
+                <div id="jugador4"><li>Sephen curry</li></div>
+                
+        <hr>
+        <div class="videoB">
+            <h3>VIDEO BALONCESTO</h3>
+            <video width="640" height="360" controls>
+                
+                    <source src="C:\Users\alejo\Downloads\Kyrie Irving Top 10 Crossovers & Handles ｜ 2017-2018 Season.mp4" type="video/mp4">
+                    <source src="C:\Users\alejo\Downloads\Kyrie Irving Top 10 Crossovers & Handles ｜ 2017-2018 Season.mp4" type="video/ogg">
+                    Tu navegador no soporta el elemento de video.
+                
+            </video>
+        </div>
+        <hr>
+        <h3>AUDIO</h3>
+        <audio controls>
+            <source src="C:\Users\alejo\Downloads\Bad Bunny - 6 rings (tributo a Kobe Bryant)  Letra.mp3" type="audio/mp3">
+            <source src="C:\Users\alejo\Downloads\Bad Bunny - 6 rings (tributo a Kobe Bryant)  Letra.mp3" type="audio/ogg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        <hr>
+        </section>
+        <form action="#" method="POST">
+            <table>
+                <tr>
+                    <td>
+                        <label for="nombre">Nombre Completo:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                    </td>
+                    <td>
+                        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="hora-nacimiento">Hora de Nacimiento:</label>
+                    </td>
+                    <td>
+                        <input type="time" id="hora-nacimiento" name="hora-nacimiento" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="estado-civil">Estado Civil:</label>
+                    </td>
+                    <td>
+                        <select id="estado-civil" name="estado-civil" required>
+                            <option value="" disabled selected>Seleccione su estado civil</option>
+                            <option value="soltero">Soltero/a</option>
+                            <option value="casado">Casado/a</option>
+                            <option value="divorciado">Divorciado/a</option>
+                            <option value="viudo">Viudo/a</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit">Enviar</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    <section>
+        Progreso de carga: <progress value="70" max="100">70%</progress>
+        Nivel de batería: <meter value="0.7">70%</meter>
+
+    </section>
+    </body>
+</html>
